@@ -1,0 +1,31 @@
+    <section class="container">
+        <ul class="gallery">
+            <li class="filter active" data-filter ="all">All</li>
+            <li class="filter" data-filter ="shoe">Shoe</li>
+            <li class="filter" data-filter ="headphone">Headphone</li>
+            <li class="filter" data-filter ="watch">Watch</li>
+        </ul>
+
+
+
+        <div class="product">
+            <div class="itembox watch">
+                <img src="/w-1.jpg"  data-item = "watch" alt="">
+            </div>
+            <div class="itembox watch">
+                <img src="/w-2.jpg"  data-item = "watch" alt="">
+            </div>
+            <div class="itembox shoe">
+                <img src="/sh-1.jpg"  data-item = "shoe" alt="">
+            </div>
+            <div class="itembox shoe">
+                <img src="/sh-2.jpg"  data-item = "shoe" alt="">
+            </div>
+            <div class="itembox headphone">
+                <img src="/h-1.jpg"  data-item = "Headphone" alt="">
+            </div>
+            <div class="itembox headphone">
+                <img src="/h-2.jpg"  data-item = "Headphone" alt="">
+            </div>
+        </div>
+    </section>
