@@ -580,7 +580,7 @@ section .event-container {
 .counter {
     width: 100%;
     background-blend-mode: multiply;
-    background-image: url("./images/hlh-1.jpg");
+    background-image: url("./images/hlh-1.webp");
     background-color: #5fac507e;
     background-repeat: no-repeat;
     background-size: cover;
