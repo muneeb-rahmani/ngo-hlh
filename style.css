@@ -1404,3 +1404,27 @@ section .gallery-box .gallery .itemBox.hide {
     }
 
 }
+
+
+
+/*----------------------- Wifaq Page ----------------------- */
+.title-container{
+    background-image:linear-gradient(rgba(46, 71, 100, 0.75),rgb(46, 71, 100, 0.75)),url(./images/s1.webp);
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.title-headline h1{
+   color: white;
+    text-shadow: #2E4764;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
