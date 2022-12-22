@@ -1916,7 +1916,7 @@ li {
     left: 50%;
     margin-left: -3px;
     z-index: 1;
-    animation: moveline 3s linear forwards;
+    animation: moveline 7s linear forwards;
 }
 
 @keyframes moveline {
@@ -1936,6 +1936,10 @@ li {
 .text-box small {
     display: inline-block;
     margin-bottom: 15px;
+}
+
+.text-box p{
+    font-size: 1.5rem;
 }
 
 .left-container-arrow{
@@ -2233,7 +2237,12 @@ li {
     }
 
     .text-box{
-        font-size: 13px;
+        font-size: 1.5rem;
+        padding: 20px 15px;
+    }
+
+    .text-box p{
+        font-size: 1rem;
     }
 
     .r-container{
@@ -2252,7 +2261,7 @@ li {
         left: -15px;
     }
 
-    .text-box h2{
+     .text-box h2{
         font-size: 1.75rem;
     }
 }
