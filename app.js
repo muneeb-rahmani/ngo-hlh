@@ -19,10 +19,10 @@ valueDisplay.forEach((valueDisplay) => {
 const gallery = document.querySelector('.gallery');
 
 const itemboxes = document.querySelectorAll('.itembox');
-console.log(itemboxes);
+
 
 gallery.addEventListener("click", (e)=> {
-    console.log(e)
+    
 
 
     if(e.target.classList.contains("filter")){
@@ -31,7 +31,7 @@ gallery.addEventListener("click", (e)=> {
         e.target.classList.add("active");
 
         const filterValue = e.target.getAttribute("data-filter");
-        console.log(filterValue);
+        
 
         itemboxes.forEach(item =>{
 
