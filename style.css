@@ -11,7 +11,8 @@
 
 
 html {
-    font-size: 100%;
+    /* font-size: 100%; */
+    font-size: 16px;
 }
 
 body {
@@ -1212,11 +1213,13 @@ section .gallery-box .gallery .itemBox.hide {
 
 .wifaq-system {
     overflow: hidden;
-
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }
 
 .system-left {
-    background-image: url(./images/wifaq-system.jpeg);
+    /* background-image: url(./images/wifaq-system.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -1226,7 +1229,7 @@ section .gallery-box .gallery .itemBox.hide {
     justify-content: flex-start;
     align-items: flex-start;
     /* background-color: #2E4764; */
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -1236,11 +1239,13 @@ section .gallery-box .gallery .itemBox.hide {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #027bae;
-    width: 50%;
+    width: 10 0%;
     float: right;
     margin: 0;
     padding: 3rem 5rem 3rem 3rem;
     height: 475px;
+    z-index: 10;
+    overflow: hidden;
 }
 
 .system-right p {
@@ -1256,7 +1261,7 @@ section .gallery-box .gallery .itemBox.hide {
 .system-right p {
     color: white;
     margin-top: 1rem;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .tel-container {
@@ -1709,6 +1714,7 @@ li {
 
 /*//////////////////// MACC ////////////////////*/
 
+
 .points {
     width: 100%;
     overflow: hidden;
@@ -1787,7 +1793,7 @@ li {
     text-align: center;
 }
 
-.macc-headline{
+.macc-headline {
     font-size: 1.25rem;
 }
 
@@ -1815,10 +1821,10 @@ li {
 }
 
 
-/* Timeline */
+/* ///////////////////// Timeline //////////////////// */
 
 .timeline-section {
-    background:rgba(46, 71, 100, 0.75);
+    background: rgba(46, 71, 100, 0.75);
     padding: 5rem 0;
 }
 
@@ -1837,36 +1843,42 @@ li {
 }
 
 @keyframes movedown {
-    0%{
+    0% {
         opacity: 1;
         transform: translateY(-30px);
     }
-    100%{
+
+    100% {
         opacity: 1;
-        transform: translateY(0px) ;
+        transform: translateY(0px);
     }
 }
 
-.timeline-container:nth-child(1){
+.timeline-container:nth-child(1) {
     animation-delay: 0s;
 }
-.timeline-container:nth-child(2){
+
+.timeline-container:nth-child(2) {
     animation-delay: 1s;
 }
-.timeline-container:nth-child(3){
+
+.timeline-container:nth-child(3) {
     animation-delay: 3s;
 }
-.timeline-container:nth-child(4){
+
+.timeline-container:nth-child(4) {
     animation-delay: 4s;
 }
-.timeline-container:nth-child(5){
+
+.timeline-container:nth-child(5) {
     animation-delay: 5s;
 }
-.timeline-container:nth-child(6){
+
+.timeline-container:nth-child(6) {
     animation-delay: 6s;
 }
 
-.text-box{
+.text-box {
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -1882,13 +1894,13 @@ li {
     left: 56%;
 }
 
-.sub-container > .text-box {
+.sub-container>.text-box {
     margin-left: 5rem;
     margin-right: 0rem;
 }
 
-.sub-container .text-box >h2{
-    font-size: 1.75rem!important;
+.sub-container .text-box>h2 {
+    font-size: 1.75rem !important;
 }
 
 .timeline-container img {
@@ -1901,12 +1913,12 @@ li {
     background-color: white;
 }
 
-.r-container img{
+.r-container img {
     left: -115px;
     /* z-index: 50; */
 }
 
-.timeline::after{
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -1920,16 +1932,17 @@ li {
 }
 
 @keyframes moveline {
-    0%{
+    0% {
         height: 0%;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
 
-.text-box h2{
-    font-weight: 700; 
+.text-box h2 {
+    font-weight: 700;
     font-size: 2.25rem;
 }
 
@@ -1938,11 +1951,11 @@ li {
     margin-bottom: 15px;
 }
 
-.text-box p{
+.text-box p {
     font-size: 1.5rem;
 }
 
-.left-container-arrow{
+.left-container-arrow {
     height: 0;
     width: 0;
     position: absolute;
@@ -1954,7 +1967,7 @@ li {
     right: -15px;
 }
 
-.right-container-arrow{
+.right-container-arrow {
     height: 0;
     width: 0;
     position: absolute;
@@ -1966,10 +1979,291 @@ li {
     left: -15px;
 }
 
+/*///////////////////// Get Updates ///////////////////////// */
+
+.get-updates {
+    width: 100%;
+    overflow: hidden;
+    padding: 5rem;
+    background-blend-mode: multiply;
+    background-image: url("./images/fill-pattern.webp");
+    background-color: #5fac50;
+}
+
+.update-container {
+    display: flex;
+    flex-direction: row;
+    /* gap: 1.5rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.get-updates>.update-container>label {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    padding-right: 2rem;
+}
+
+.get-updates>.update-container>input {
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding: 1rem 5rem;
+}
+
+.get-updates>.update-container> ::placeholder {
+    margin-left: -5rem;
+}
+
+
+.get-updates>.update-container>input:hover {
+    outline: none;
+}
+
+.get-updates>.update-container>button {
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 0.80rem 1rem;
+    background-color: #2E4764;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.get-updates>.update-container>button:hover {
+    border: 2px solid #2E4764;
+    background-color: transparent;
+    color: #2E4764;
+    transition: all 0.25s ease;
+}
+
+/*//////////////// Tahaffuz ////////////////*/
+
+.introduction .intro-container .intro-img-tahaffuz img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 25%;
+}
+
+
+/*//////////////////////// Diploma Men & Women Course ////////////////////*/
+
+.diploma-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.diploma-items:nth-child(1) {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.diploma-items:nth-child(2) {
+    background-color: #059CE0;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 4.5rem 2rem 0 2.5rem;
+}
+
+.diploma-items img {
+    width: 100%;
+    /* object-fit:cover; */
+    object-fit: scale-down;
+
+}
+
+.diploma-items h3, h4, li {
+    color: white;
+}
+
+.diploma-items h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+
+.diploma-items li{
+    list-style: square;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.diploma-btn {
+background-color: #ffffff;
+color: rgb(32, 32, 32);
+font-weight: 300;
+font-size: 1rem;
+font-weight: 500;
+padding: 10px 18px;
+border: none;
+border-radius: 35px;
+}
+
+.diploma-btn > a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.diploma-btn a:hover {
+    color: white;
+}
+
+.diploma-btn:hover {
+    background-color: #027bae;
+    color: white;
+    
+}
+
+@media (max-width: 780px) {
+    .diploma-container {
+        flex-wrap: wrap;
+    }
+    .diploma-items h3 {
+        font-size: 1.5rem;
+    }
+
+    .diploma-items h4{
+        font-size: 1rem;
+    }
+
+    .diploma-items li {
+        font-size: 1rem;
+    }
+}
+
+/*//////////////////////// Diploma 40 Days Course ////////////////////*/
+
+.d-course-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.d-course-items:nth-child(1) {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.d-course-items:nth-child(2) {
+    /* background-color: #059CE0; */
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    align-items: flex-end;
+    /* justify-content: right; */
+    /* text-align: end; */
+    order: 0;
+    padding: 5rem 2rem 0 5rem;
+}
+
+.d-course-items img {
+    width: 100%;
+    /* object-fit:cover; */
+    object-fit: scale-down;
+
+}
+
+.d-course-items h3, h4, li {
+    color: white;
+}
+
+.d-course-items h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:rgb(32, 32, 32);
+}
+.d-course-items h4 {
+    color:rgb(32, 32, 32);
+}
+
+
+.d-course-items li{
+    list-style: square;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:rgb(32, 32, 32);
+}
+
+.d-course-btn {
+background-color: #059CE0;
+color: rgb(255, 255, 255);
+font-weight: 300;
+font-size: 1rem;
+font-weight: 500;
+padding: 10px 18px;
+border: none;
+border-radius: 35px;
+width:fit-content;
+margin-top: 1rem;
+}
+
+.d-course-btn > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.d-course-btn a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.d-course-btn:hover {
+    background-color: #027bae;
+    color: white;
+    
+}
+
+@media (max-width: 780px) {
+    .d-course-container {
+        flex-wrap: wrap;
+    }
+    .d-course-items h3 {
+        font-size: 1.5rem;
+    }
+
+    .d-course-items{
+        flex-wrap: wrap;
+    }
+
+    .d-course-items h4{
+        font-size: 1rem;
+    }
+
+    .d-course-items li {
+        font-size: 1rem;
+    }
+}
 
 
 
+/* ////////////////////////Mahadur Rasheed//////////////////////// */
 
+.mahad-btn{
+    text-decoration: none;
+    color: white;
+}
 
 
 /* ////////////////Media Queries//////////////////// */
@@ -2095,11 +2389,14 @@ li {
         font-size: 1rem;
     }
 
-    /* .footer-section,
-    .quicklinks,
-    .department {
+    .update-container {
         flex-wrap: wrap;
-    } */
+    }
+
+    .get-updates>.update-container>label {
+        margin-bottom: 1.5rem;
+        padding-right: 0;
+    }
 
     .footer-section {
         flex-direction: column;
@@ -2109,6 +2406,10 @@ li {
     .google-map {
         width: 100%;
 
+    }
+
+    .system-left {
+        flex-wrap: wrap;
     }
 
 
@@ -2214,6 +2515,11 @@ li {
         margin: 0;
     }
 
+    .system-left {
+        flex-wrap: wrap;
+    }
+
+
     footer .department {
         padding: 1.5rem;
         display: flex;
@@ -2223,45 +2529,78 @@ li {
         margin: 0;
     }
 
-    .timeline{
+    .timeline {
         margin: 0 auto;
     }
-    .timeline::after{
+
+    .timeline::after {
         left: 31px;
     }
 
-    .timeline-container{
+    .timeline-container {
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
     }
 
-    .text-box{
+    .text-box {
         font-size: 1.5rem;
         padding: 20px 15px;
     }
 
-    .text-box p{
+    .text-box p {
         font-size: 1rem;
     }
 
-    .r-container{
+    .r-container {
         left: 0;
     }
 
-    .l-container img, .r-container img{
-        left:12px;
+    .l-container img,
+    .r-container img {
+        left: 12px;
         width: 10vw;
         z-index: 9999;
     }
 
-    .left-container-arrow, .right-container-arrow {
+    .left-container-arrow,
+    .right-container-arrow {
         border-right: 15px solid #fff;
         border-left: 0;
         left: -15px;
     }
 
-     .text-box h2{
+    .text-box h2 {
         font-size: 1.75rem;
     }
+
+    .get-updates>.update-container>label {
+        text-align: center;
+    }
+
+    .get-updates>.update-container>input {
+        border-radius: 50px;
+        padding: 0.75rem 3rem;
+    }
+
+    .get-updates>.update-container>button {
+        border-radius: 50px;
+        padding: 0.5rem 0.75rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+
+    }
+
+    .title-headline h1>span {
+        font-size: 1.5rem !important;
+        line-height: 5%;
+    }
+
+    .introduction .intro-container .intro-img-tahaffuz img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 0% !important;
+    }
+
+
 }
