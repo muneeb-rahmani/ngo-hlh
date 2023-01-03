@@ -2049,19 +2049,8 @@ li {
 }
 
 .tahaffuz-service {
-    padding: 2rem 10%;
+    padding: 0.5rem 10%;
 }
-
-/* .whatsapp-service {
-    display: flex;
-    flex-direction: row;
-    padding: 0 10rem;
-    gap: 5rem;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-} */
 
 .service-container {
     display: flex;
@@ -2069,8 +2058,8 @@ li {
     flex-direction: row;
     gap: 2rem;
     flex-wrap: nowrap;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
+    /* padding: 2rem 0; */
+    padding-bottom: 0.5rem;
 }
 
 .whatsapp-right h3 {
@@ -2084,12 +2073,13 @@ li {
 }
 
 .whatsapp-left img {
-    width: 350px;
+    width: 300px;
     height: auto;
+    display: flex;
 }
 
 
-#workshop{
+#workshop-right{
     flex-direction: row-reverse!important;
 }
 
@@ -2641,6 +2631,10 @@ margin-top: 1rem;
         font-size: 1.75rem;
     }
 
+    .get-updates {
+        padding: 2rem;
+    }
+
     .get-updates>.update-container>label {
         text-align: center;
     }
@@ -2655,8 +2649,7 @@ margin-top: 1rem;
         padding: 0.5rem 0.75rem;
         margin-top: 1rem;
         font-size: 1rem;
-
-    }
+}
 
     .title-headline h1>span {
         font-size: 1.5rem !important;
@@ -2677,12 +2670,23 @@ margin-top: 1rem;
         }
     
         .tahaffuz-service {
-            padding: 1rem 5%;
+            padding: 0.25rem 5%;
         }
 
         .whatsapp-left img {
             width: 250px;
         }
+
+        #workshop-right{
+            flex-direction: column-reverse!important;
+        }
+
+        .service-container {
+            gap: 0rem;
+        }
+
+
+
     
 
 }
