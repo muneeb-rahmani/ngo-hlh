@@ -52,38 +52,6 @@ gallery.addEventListener("click", (e)=> {
 
 
 
-// const gallery = document.querySelector(".nav-container");
-
-// const itemBoxes = document.querySelectorAll(".itemBox")
-// console.log(itemBoxes)
-
-// gallery.addEventListener('click', (e)=>{
-//     console.log(e);
-
-
-//     if(e.target.classList.contains('filter')){
-//         gallery.querySelector(".active").classList.remove("active");
-
-//         e.target.classList.add("active");
-
-//         const filterValue = e.target.getAttribute("data-filter");
-//         console.log(filterValue);
-
-//         itemBoxes.forEach(item => {
-
-//             if(item.classList.contains(filterValue) || filterValue === "all"){
-//                 item.classList.add("show");
-
-//                 item.classList.remove('hide')
-//             }else{
-//                 item.classList.add('hide');
-//             }
-            
-//         })
-//     }
-// })
-
-
 
 
 //////////////// Navbar
@@ -95,8 +63,20 @@ toggler.addEventListener('click', ()=>{
     // toggler.style.transition="all 0.5s ease-in-out;";
 })
 
-// let navCenter = document.querySelector(".nav-center");
-// navCenter.addEventListener('click', ()=>{
-//     navCenter.style.transition="all 0.5s ease";
-// })
+
+////////////// Pay Now
+
+  function generateUPI() {
+    // Get the amount from the form
+    var amount = document.getElementById("amount").value;
+    
+    // Generate a unique transaction ID
+    var transactionId = Date.now() + Math.random().toString(36).substring(2, 15);
+    
+    // Generate the UPI payment link
+    var upiLink = "upi://pay?pa=wifaqstore@axisbank&pn=Ehsan%20Ahmed%20Siddiqui&am=" + amount + "&cu=INR&mode=04&purpose=00&src=00&tid=" + transactionId;
+    
+    // Display the UPI payment link in the container
+    document.getElementById("upi-container").innerHTML = "<button><a href='" + upiLink + "'>Pay using UPI</a></button>";
+  }
 

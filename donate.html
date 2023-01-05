@@ -52,6 +52,33 @@
   </div>
 
     
+  <section class="donate-now">
+    <div class="bank-details">
+      <h3>Account Details</h3>
+      <p>Helpline Hyderabad Educational & Charitable Trust</p>
+      <p>Branch: <b>Axis Bank Champapet</b></p>
+      <p>Account No: <b>921020006543965</b></p>
+      <p>IFSC No: <b>UTIB0001305</b></p>
+  
+      <div class="pay-now">
+
+        <span class="pay-headline">You can pay by entering amount</span>
+        <!-- Add a form for the user to input the amount -->
+        <form id="payment-form">
+          <input type="text" id="amount" name="amount" placeholder="Enter your Amount"><br>
+          <input class="gen-btn" type="button" value="Generate Link" onclick="generateUPI()" style="font-weight: 500; color: rgb(50, 50, 50); font-size: 1rem;">
+        </form>
+  
+        <!-- Add a container to display the UPI payment link -->
+        <div id="upi-container"></div>
+  
+      </div>
+    </div>
+    <div class="qr-code">
+      <span class="pay-headline">You can also Pay by Scanning this Qr Code</span>
+      <img src="./images/HLH QR.jpg" alt="Helpline QR Code">
+    </div>
+  </section>
 
 
     <!-- -------------------Footer Section--------------------- -->
