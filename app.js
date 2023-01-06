@@ -55,13 +55,31 @@ gallery.addEventListener("click", (e)=> {
 
 
 //////////////// Navbar
-const toggler = document.getElementById('toggler');
-const navLinks = document.getElementById('nav-links');
+let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
 
-toggler.addEventListener('click', ()=>{
-    navLinks.classList.toggle('active');
-    // toggler.style.transition="all 0.5s ease-in-out;";
-})
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});
+
+
+// const toggler = document.getElementById('toggler');
+// const navLinks = document.getElementById('nav-links');
+
+// toggler.addEventListener('click', ()=>{
+//     navLinks.classList.toggle('active');
+//     // toggler.style.transition="all 0.5s ease-in-out;";
+// })
+
+
 
 
 ////////////// Pay Now
