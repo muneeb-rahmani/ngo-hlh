@@ -86,15 +86,28 @@ navLinks.forEach((navLinks) => {
 
   function generateUPI() {
     // Get the amount from the form
-    var amount = document.getElementById("amount").value;
+    let amount = document.getElementById("amount").value;
     
     // Generate a unique transaction ID
-    var transactionId = Date.now() + Math.random().toString(36).substring(2, 15);
+    let transactionId = Date.now() + Math.random().toString(36).substring(2, 15);
     
     // Generate the UPI payment link
-    var upiLink = "upi://pay?pa=wifaqstore@axisbank&pn=Ehsan%20Ahmed%20Siddiqui&am=" + amount + "&cu=INR&mode=04&purpose=00&src=00&tid=" + transactionId;
+    let upiLink = "upi://pay?pa=wifaqstore@axisbank&pn=Ehsan%20Ahmed%20Siddiqui&am=" + amount + "&cu=INR&mode=04&purpose=00&src=00&tid=" + transactionId;
     
     // Display the UPI payment link in the container
     document.getElementById("upi-container").innerHTML = "<button><a href='" + upiLink + "'>Pay using UPI</a></button>";
   }
 
+
+
+  ///// Contact Us
+
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbzKPvrkc37DbO8_HjQWMyPn39nrCo1WvtCudGg_exJYkrJ9GshOTD8AQPbn_8Cr97Or0w/exec'
+  // const form = document.forms['contact-us']
+
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault()
+  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  //     .then(response => console.log('Success!', response))
+  //     .catch(error => console.error('Error!', error.message))
+  // })

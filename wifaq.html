@@ -86,7 +86,7 @@
           more effective and to strengthen and spread it, a few issues have been basically determined in consultation
           with Hazrat Shah Jamal-ur-Rahman Sahab and Alhamdulillah after that it came into existence in September 2013
           under the name Wifaq-ul-Makatib.</p>
-        <button class="intro-btn">Learn More</button>
+          <button class="intro-btn"><a href="./contact.html" target="_blank">Get in Touch</a></button>
       </div>
       <div class="intro-img">
         <img src="./images/wifaq-logo.webp" alt="Wifaq Circle Logo">
@@ -120,7 +120,7 @@
   </section>
 
 
-  <!-- Activities of Wifaq -->
+  <!-- Activities of Wifaq Desktop-->
   <section class="wifaq-activity">
     <div class="activity-headline">
       <h3>Activity of Wifaq</h3>
@@ -162,6 +162,50 @@
       </div>
     </div>
   </section>
+
+
+  <!-- Activities of Wifaq Mobile -->
+  <!-- <section class="activity-mobile">
+    <div class="activity-headline">
+      <h3>Activity of Wifaq</h3>
+    </div>
+
+    <div class="activity-container">
+      <div class="left-activity">
+        <div class="awarness">
+          <img src="./icons/awarness.svg" alt="awarness"><br>
+          <p>Create awareness in public for establishment of religious schools.</p>
+        </div>
+        <div class="guidance">
+          <img src="./icons/right guidance.svg" alt="guidance"><br>
+          <p>Provide right guidance to people concerned about establishment of Makatib.</p>
+        </div>
+        <div class="efforts">
+          <img src="./icons/efforts.svg" alt="efforts"><br>
+          <p>Make efforts for the establishment of new organised Maktabs each month.</p>
+        </div>
+      </div>
+
+      <div class="img-activity">
+        <img src="./images/Wifaq.png" alt="Wifaq Logo">
+      </div>
+
+      <div class="right-activity">
+        <div class="devlop">
+          <img src="./icons/devlop.svg" alt="devlop"><br>
+          <p>Take steps to develop educational standards in existing and established schools.</p>
+        </div>
+        <div class="essential">
+          <img src="./icons/essential.svg" alt="essential"><br>
+          <p>Provide essential goods which required in well-organised Schools and Makatibs.</p>
+        </div>
+        <div class="workshop">
+          <img src="./icons/workshop.svg" alt="workshop"><br>
+          <p>Conduct male and female workshop (training classes) for teachers teaching in schools..</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <!------------------- Deeniyaat ------------------->
 
@@ -229,21 +273,6 @@
 
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Wifaq Products -->
 
   <section class="gallery-container">
@@ -309,6 +338,29 @@
 
     </div>
   </section>
+
+
+  <!-- Wifaq Form -->
+  <section class="wifaq-form">
+    <h5>Have any Query?</h5>
+    <form action="" name="contact-us">
+      <div class="form-group">
+       <input type="text" name="name" id="name"  placeholder="Name"> 
+       <input type="tel" name="phone" id="phone" placeholder="Mobile No."> 
+       <input type="text" name="address" id="address" placeholder="Address"> 
+       <select name="enquiry" id="enquiry">
+         <option value="kafalat">Kafalat</option>
+         <option value="admission">Admission</option>
+         <option value="maktab-registration">Maktab Registration</option>
+       </select>
+       <input type="submit" id="submit">
+      </div>
+    </form>
+  </section>
+
+
+
+
 
   <!-- Masjid -->
   
@@ -376,7 +428,17 @@
 
 
 
-
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKPvrkc37DbO8_HjQWMyPn39nrCo1WvtCudGg_exJYkrJ9GshOTD8AQPbn_8Cr97Or0w/exec'
+    const form = document.forms['contact-us']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 
 
