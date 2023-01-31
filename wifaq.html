@@ -338,20 +338,21 @@
 
     </div>
   </section>
-
-
+  
+  
   <!-- Wifaq Form -->
   <section class="wifaq-form">
+    <span id="success-msg"></span>
     <h5>Have any Query?</h5>
     <form action="" name="contact-us">
       <div class="form-group">
        <input type="text" name="name" id="name"  placeholder="Name"> 
-       <input type="tel" name="phone" id="phone" placeholder="Mobile No."> 
+       <input type="tel" name="mobile" id="mobile" placeholder="Mobile No."> 
        <input type="text" name="address" id="address" placeholder="Address"> 
        <select name="enquiry" id="enquiry">
          <option value="kafalat">Kafalat</option>
          <option value="admission">Admission</option>
-         <option value="maktab-registration">Maktab Registration</option>
+         <option value="maktab-registration">Maktab Integration</option>
        </select>
        <input type="submit" id="submit">
       </div>
@@ -431,11 +432,18 @@
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzKPvrkc37DbO8_HjQWMyPn39nrCo1WvtCudGg_exJYkrJ9GshOTD8AQPbn_8Cr97Or0w/exec'
     const form = document.forms['contact-us']
+    const msg = document.getElementById("success-msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+          msg.innerHTML = "Your Query submitted successfully! Soon we'll get back to you"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        } )
         .catch(error => console.error('Error!', error.message))
     })
   </script>

@@ -2578,6 +2578,115 @@ li {
   color: white;
 }
 
+/* Get results */
+.search-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-results input {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.get-results input:hover {
+  outline: none;
+}
+
+.mahad-logo img{
+  width: 150px;
+  height: auto;
+}
+
+.user-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background:#059ce0;
+  padding: 2rem;
+}
+
+
+/* Table Results */
+
+.divTableHead img{
+  width: 100px;
+  margin-inline: auto;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.divTableHead{
+  margin-inline: auto;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.table-results{
+  padding: 0 5rem;
+}
+
+div.cinereousTable {
+  border: 1px solid #2E4764;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+.divTable.cinereousTable .divTableCell, .divTable.cinereousTable .divTableHead {
+  border: 1px solid #2E4764;
+  padding: 4px 4px;
+}
+.divTable.cinereousTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.divTable.cinereousTable .divTableHeading {
+  background: #5FAC50;
+  background: -moz-linear-gradient(top, #87c17c 0%, #6fb461 66%, #5FAC50 100%);
+  background: -webkit-linear-gradient(top, #87c17c 0%, #6fb461 66%, #5FAC50 100%);
+  background: linear-gradient(to bottom, #87c17c 0%, #6fb461 66%, #5FAC50 100%);
+}
+.divTable.cinereousTable .divTableHeading .divTableHead {
+  font-size: 17px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #2E4764;
+}
+.divTable.cinereousTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.cinereousTable .tableFootStyle {
+  font-size: 16px;
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+
+
+
+
+
+
 /*//////////////////////// Contact Us ////////////////////////*/
 .contact {
   padding: 1.5rem 10%;

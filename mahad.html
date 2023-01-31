@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./studentData.js"></script>
   <title>Mahad</title>
   <script src="https://kit.fontawesome.com/af0c374d90.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
@@ -95,6 +96,72 @@
     </div>
   </section>
 
+
+  <!-- Get Results -->
+  <section class="get-results">
+    <div class="search-wrapper">
+      <span class="rollNo">Enter your Roll No.</span><br>
+      <input type="search" id="search">
+      <input type="submit" id="submit">
+    </div>
+    <!-- <div class="user-cards">
+      <div class="user-card">
+        <div class="mahad-logo"><img src="./images/Mahad.png" alt=""></div>
+        <div class="rollNo" id="rollNo">123</div>
+        <div class="studentName" id="studentName">Muneeb</div>
+        <div class="studentClass" id="studentClass">Hifz</div>
+        <div class="studentMarks" id="studentMarks">Marks</div>
+        <div class="studentNote" id="studentNote">Good</div>
+      </div>
+    </div> -->
+  </section>
+
+
+  <!-- Table Result -->
+
+  <section class="table-results">
+    <div class="divTable cinereousTable">
+      <div class="divTableHeading">
+        <div class="divTableRow">
+          <div class="divTableHead" id="result-logo"><img src="./images/Mahad.png" alt=""></div>
+          <div class="divTableHead" id="rollNo">Roll No.</div>
+          <div class="divTableHead" id="studentName">Student</div>
+          <div class="divTableHead" id="studentClass">Class</div>
+          <div class="divTableHead" id="studentMarks">Marks</div>
+        </div>
+      </div>
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell">cell1_1</div>
+          <div class="divTableCell">cell2_1</div>
+          <div class="divTableCell">cell3_1</div>
+          <div class="divTableCell">cell4_1</div>
+          <div class="divTableCell">cell5_1</div>
+        </div>
+      </div>
+  
+  </section>
+
+    <!-- Wifaq Form -->
+    <section class="wifaq-form">
+      <h5>Have any Query?</h5>
+      <form action="" name="mahad-form">
+        <div class="form-group">
+          <input type="text" name="name" id="name"  placeholder="Name"> 
+          <input type="tel" name="mobile" id="mobile" placeholder="Mobile No."> 
+          <input type="text" name="address" id="address" placeholder="Address"> 
+          <select name="enquiry" id="enquiry">
+            <option value="kafalat">Kafalat</option>
+            <option value="admission">Admission</option>
+          </select>
+          <input type="submit" id="submit">
+        </div>
+      </form>
+      <span id="success-msg"></span>
+    </section>
+
+
+
   <!-- Get Updates -->
 <section class="get-updates">
   <div class="update-container">
@@ -148,12 +215,26 @@
         </div>
       </footer>
     
+      
     
-    
-    
-    
-    
-    
+      <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxk2f2i77MtDKAD7zQ8-DReGl1vPKYo2m5yiUgQ846bMW33GPhdwGQXbaXhgaiFDNU-7g/exec'
+    const formM = document.forms['mahad-form']
+    const msgM = document.getElementById("success-msg")
+  
+    formM.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(formM)})
+        .then(response => {
+          msgM.innerHTML = "Your Query submitted successfully! Soon we'll get back to you"
+          setTimeout(function(){
+            msgM.innerHTML = ""
+          }, 5000)
+          formM.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     
     
     
