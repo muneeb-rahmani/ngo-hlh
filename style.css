@@ -873,6 +873,52 @@ span.course-date {
 
 /* --------------------------Gallery Section-------------------------- */
 
+
+.gallery-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/gallery\ hero.jpg);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
+
+
+
 li {
   list-style: none;
 }
@@ -1986,6 +2032,51 @@ textarea {
 
 /*//////////////////// MACC ////////////////////*/
 
+
+.helpway-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/gallery/Rain-affected-5.webp);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
+
+
 .points {
   width: 100%;
   overflow: hidden;
@@ -2309,6 +2400,49 @@ textarea {
 
 /*//////////////// Tahaffuz ////////////////*/
 
+
+.tahaffuz-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/tahaffuz\ e\ sunnat\ hero.jpg);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
 .introduction .intro-container .intro-img-tahaffuz img {
   max-width: 40%;
   height: auto;
@@ -2350,6 +2484,51 @@ textarea {
 }
 
 /*//////////////////////// Diploma Men & Women Course ////////////////////*/
+
+
+
+.diploma-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/online\ diploma\ hero.jpg);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
 
 .diploma-container {
   display: flex;
@@ -2573,6 +2752,52 @@ li {
 
 /* ////////////////////////Mahadur Rasheed//////////////////////// */
 
+.mahad-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/mahad-madarsa\ final.jpg);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
+
+
+
+
 .mahad-btn {
   text-decoration: none;
   color: white;
@@ -2688,6 +2913,52 @@ div.cinereousTable {
 
 
 /*//////////////////////// Contact Us ////////////////////////*/
+
+.contact-hero {
+  background-image: linear-gradient(
+      rgba(46, 71, 100, 0.75),
+      rgb(46, 71, 100, 0.75)
+    ),
+    url(./images/all-department.webp);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-headline h1 {
+  color: white;
+  text-shadow: #2e4764;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb li a:hover {
+  color: #f7f1e9 !important;
+}
+
+
+
+
 .contact {
   padding: 1.5rem 10%;
   display: flex;
