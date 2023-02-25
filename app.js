@@ -70,18 +70,6 @@ navLinks.forEach((navLinks) => {
   });
 });
 
-
-// const toggler = document.getElementById('toggler');
-// const navLinks = document.getElementById('nav-links');
-
-// toggler.addEventListener('click', ()=>{
-//     navLinks.classList.toggle('active');
-//     // toggler.style.transition="all 0.5s ease-in-out;";
-// })
-
-
-
-
 ////////////// Pay Now
 
   function generateUPI() {
@@ -99,15 +87,57 @@ navLinks.forEach((navLinks) => {
   }
 
 
+///////////// Wifaq Location
+const users = document.querySelector(".all-data");
+const searchInput = document.getElementById("search-maktab");
+const submitBtn = document.getElementById("submit-button");
 
-  ///// Contact Us
+const maktabArr = [];
 
-  // const scriptURL = 'https://script.google.com/macros/s/AKfycbzKPvrkc37DbO8_HjQWMyPn39nrCo1WvtCudGg_exJYkrJ9GshOTD8AQPbn_8Cr97Or0w/exec'
-  // const form = document.forms['contact-us']
+const getUserData = async () => {
+  try {
+    const res = await fetch("./test.json");
+    const data = await res.json();
+    console.log(data);
 
-  // form.addEventListener('submit', e => {
-  //   e.preventDefault()
-  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  //     .then(response => console.log('Success!', response))
-  //     .catch(error => console.error('Error!', error.message))
-  // })
+    data.map((user, index) => {
+      const li = document.createElement("li");
+
+      li.insertAdjacentHTML(
+        "afterbegin",
+        `
+        <div class="maktab-data">
+        <img src="./images/wifaq-logo.webp" alt="">
+        <h2>${user.name}</h2>
+        <p>${user.address}<p>
+        <a href=${user.location} target="_blank"><button>Get Direction</button></a>
+        </div>
+        `
+      );
+
+      maktabArr.push({ id: index, element: li });
+      users.appendChild(li);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const val = searchInput.value;
+  console.log(val);
+
+  users.innerHTML = "";
+  users.style.display = "block";
+
+  maktabArr.forEach((curData) => {
+    const { id, element } = curData;
+
+    element.innerText.toLowerCase().includes(val.toLowerCase())
+      ? users.appendChild(element)
+      : null;
+  });
+});
+
+getUserData();

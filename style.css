@@ -805,7 +805,7 @@ section .card .course-img {
 section .card .course-img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   /* border-radius: 50%; */
   border: 3px solid #2e4764;
 }
@@ -2873,6 +2873,170 @@ textarea {
   margin: 0.5rem 0;
 }
 
+/* Wifaq Location */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap");
+
+
+.all-data {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+    padding-top: 2rem;
+    margin-inline: auto;
+    gap: 2rem;
+}
+
+.all-data > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wifaq-contact-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  justify-content: space-between;
+}
+
+.wifaq-contact-icon > .call-icon button {
+  background-color: #5fac50;
+  color: white;
+  font-weight: 150;
+  padding: 10px 10px!important;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.maktab-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 350px;
+    padding-top: 2rem;
+    margin-inline: auto;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-duration: 0.75s;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+@keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container input {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 10px;
+  width: 50%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.search-container input:focus{
+  outline: none;
+}
+
+.search-container input:focus::placeholder {
+  color: white;
+}
+
+
+.search-container > button {
+  background-color: #5fac50;
+  color: white;
+  font-weight: 300;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  border: 2px solid #5fac50;
+  border-radius: 35px;
+  background-color: transparent;
+  color: #2e4764;
+  transition: 0.3s;
+}
+
+.maktab-data img{
+    max-width: 100%;
+    height: auto;
+    width: 35%;
+    margin-bottom: 2rem;
+}
+
+.location-icon > button{
+    width: 100%;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 0.75rem;
+    margin: 0;
+    width: 100%!important;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.maktab-data p {
+   text-align: center;
+   padding: 0 1rem;
+   font-size: 1rem;
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   color: #000000;
+}
+
+.maktab-data h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.maktab-data a{
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.maktab-data li {
+  list-style-type: none;
+}
+
+.all-data {
+    display: none;
+  }
+  
 
 /* ////////////////Media Queries//////////////////// */
 
@@ -3241,11 +3405,14 @@ textarea {
     font-size: 1rem;
   }
 
-  /* .wifaq-activity {
-    display: none;
-  } */
+  .all-data {
+    flex-wrap: wrap;
+    padding: 1rem 2rem 2rem 2rem;
+  }
 
-
+  .search-container {
+    margin-bottom: 1.5rem!important;
+  }
 
 
 
@@ -3323,3 +3490,4 @@ textarea {
     padding: 0.5rem 1rem;
   }
 }
+

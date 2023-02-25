@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./studentData.js"></script>
+  <script src="./studentdata.js" defer></script>
   <title>Mahad</title>
   <script src="https://kit.fontawesome.com/af0c374d90.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
@@ -121,8 +121,8 @@
 
   <section class="table-results">
     <div class="divTable cinereousTable">
-      <div class="divTableHeading">
-        <div class="divTableRow">
+      <div class="divTableHeading" >
+        <div class="divTableRow" data-student-container>
           <div class="divTableHead" id="result-logo"><img src="./images/Mahad.png" alt=""></div>
           <div class="divTableHead" id="rollNo">Roll No.</div>
           <div class="divTableHead" id="studentName">Student</div>
@@ -130,15 +130,18 @@
           <div class="divTableHead" id="studentMarks">Marks</div>
         </div>
       </div>
-      <div class="divTableBody">
+
+    </div>
+    <template data-student-template>
+      <div class="divTableBody" >
         <div class="divTableRow">
-          <div class="divTableCell">cell1_1</div>
-          <div class="divTableCell">cell2_1</div>
-          <div class="divTableCell">cell3_1</div>
-          <div class="divTableCell">cell4_1</div>
-          <div class="divTableCell">cell5_1</div>
+          <div class="divTableCell" roll-no></div>
+          <div class="divTableCell" student-name></div>
+          <div class="divTableCell" student-class></div>
+          <div class="divTableCell" student-marks></div>
+          <div class="divTableCell" student-note></div>
         </div>
-      </div>
+    </template>
   
   </section>
 
