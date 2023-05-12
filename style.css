@@ -328,8 +328,9 @@ nav ul.active {
 .introduction,
 .shape {
   background-image: url(./images/left-design.PNG);
+  background-size: contain;
   background-repeat: no-repeat;
-  padding: 100px 0px;
+  margin: 2rem 0 2rem 0;
   height: auto;
   width: 100%;
   z-index: -3;
@@ -342,7 +343,7 @@ nav ul.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 65px;
+  padding: 25px 65px 25px 65px;
   gap: 5rem;
   /* max-width: 1190px; */
   /* width: 100%; */
@@ -1754,7 +1755,7 @@ li {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  padding: 5rem 5rem 5rem 0;
+  padding: 0rem 0rem 0rem 0;
 }
 
 .deeniyaat-bundle {
@@ -1781,11 +1782,13 @@ li {
   flex-direction: column;
   width: 100%;
   row-gap: 2rem;
+  padding: 0 1rem;
 }
 
 .deeniyaat-content h4 {
   font-size: 2rem;
   font-weight: 700;
+  color: black;
 }
 
 .progress-container {
@@ -1803,6 +1806,8 @@ li {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
+  /* justify-content: center; */
+  align-items: baseline;
 }
 
 .progress1 {
@@ -1814,9 +1819,6 @@ li {
   background-color: transparent;
 }
 
-/* .tel P{
-    display: block;
-} */
 
 .progress1 > h5 {
   font-size: 2.5rem;
@@ -1830,7 +1832,7 @@ li {
   flex-direction: row-reverse;
   width: 100%;
   align-items: center;
-  padding: 5rem 0rem 5rem 5rem;
+  padding: 5rem 0rem 3rem 0rem;
 }
 
 .school-bundle {
@@ -1845,7 +1847,7 @@ li {
 
 .school-bundle img {
   height: auto;
-  margin-top: -15rem;
+  margin-top: -8rem;
   width: 35vw;
   float: left;
 }
@@ -1856,11 +1858,14 @@ li {
   width: 100%;
   row-gap: 1vh;
   align-items: flex-end;
+  padding: 0 1rem;
 }
 
 .school-content h4 {
   font-size: 2rem;
   font-weight: 700;
+  color: black;
+  text-align: center;
 }
 
 .school-container {
@@ -1889,9 +1894,6 @@ li {
   background-color: transparent;
 }
 
-/* .tel P{
-    display: block;
-} */
 
 .school1 > h5 {
   font-size: 2.5rem;
@@ -2626,6 +2628,58 @@ textarea {
 
   .diploma-items li {
     font-size: 1rem;
+  }
+
+  .deeniyaat {
+    flex-wrap: wrap;
+  }
+
+  .deeniyaat-bundle {
+    width: 100vw;
+    height: 60vh;
+    border-radius: 0;
+    margin-right: 0;
+  }
+
+  .deeniyaat-bundle img {
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .deeniyaat-content h4 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .prog {
+  justify-content: center;
+  align-items: baseline;
+  }
+
+  .progress1 > h5 {
+    font-size: 2rem;
+  }
+
+  .bundle-tel {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  } 
+
+  .school {
+    flex-wrap: wrap;
+  }
+
+  .school-bundle {
+    width: 100vw;
+    height: 16vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .school-bundle img {
+    margin-top: 0;
   }
 }
 
@@ -3377,8 +3431,8 @@ textarea {
 
   .introduction .intro-container {
     flex-wrap: wrap-reverse;
-    margin-top: -4em;
-    margin-bottom: -4em;
+    margin-top: 0em;
+    margin-bottom: 0em;
     padding: 2em;
   }
 
@@ -3759,6 +3813,46 @@ textarea {
 
   #upi-container button {
     padding: 0.5rem 1rem;
+  }
+
+  .deeniyaat-bundle img {
+    width: 100%;
+    float: inherit;
+    transform: translateX(0%);
+  }
+
+  .deeniyaat-content h4 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .prog {
+    justify-content: center;
+    align-items: baseline;
+    }
+
+    .progress1 > h5 {
+      font-size: 1.5rem;
+    }
+
+  .bundle-tel {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  } 
+
+  .school-bundle img {
+    width: 100%;
+    /* transform: translateX(0); */
+    margin-top: -6rem;
+  }
+
+  .school-content h4 {
+    padding-top: 2rem;
+  }
+
+  .w-5\/6 {
+    width: 135%!important;
   }
 }
 
