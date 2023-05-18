@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Translation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+  <script>
+    // Initialize i18next
+    i18next.init({
+      lng: 'en', // Default language
+      debug: true, // Enable debug output
+      resources: {
+        en: {
+          translation: {
+            'Hello': 'Hello',
+            'Welcome': 'Welcome to my page!'
+            // Add more translations in English
+          }
+        },
+        ur: {
+          translation: {
+            'Hello': 'ہیلو',
+            'Welcome': 'میرے صفحے میں خوش آمدید'
+            // Add more translations in Urdu
+          }
+        }
+        // Add more language resources as needed
+      }
+    });
+
+    // Function to change the language
+    function changeLanguage(lang) {
+      i18next.changeLanguage(lang, (err, t) => {
+        if (err) return console.error(err);
+        translateContent();
+      });
+    }
+
+    // Function to translate content
+    function translateContent() {
+      // Translate content using i18next
+      $('[data-i18n]').each(function () {
+        const key = $(this).data('i18n');
+        $(this).text(i18next.t(key));
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1 data-i18n="Hello">Hello</h1>
+  <p data-i18n="Welcome">Welcome to my page!</p>
+  <button onclick="changeLanguage('ur')">Translate to Urdu</button>
+
+  <!-- Add your content here -->
+
+  <script>
+    // Call translateContent initially to translate the default language
+    translateContent();
+  </script>
+</body>
+</html>

@@ -15,7 +15,6 @@
 }
 
 html {
-  /* font-size: 100%; */
   font-size: 16px;
 }
 
@@ -24,9 +23,15 @@ body {
   padding: 0px;
   list-style: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
-  /* overflow: hidden; */
+}
+
+.eng-font {
+  font-family: "Poppins", sans-serif!important;
+}
+
+.urdu-font {
+  font-family: "Nastaleeq", sans-serif!important;
 }
 
 
@@ -3361,6 +3366,247 @@ textarea {
 .all-data {
     display: none;
   }
+  
+
+/* //////////////////Translator///////////////////// */
+
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-simple img,
+img.goog-te-gadget-icon,
+.goog-te-menu-value span {
+    display: none !important
+}
+
+.goog-te-menu-frame {
+    box-shadow: none !important
+}
+
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20,5H10.88L10,2H4A2,2 0 0,0 2,4V17A2,2 0 0,0 4,19H11L12,22H20A2,2 0 0,0 22,20V7A2,2 0 0,0 20,5M7.17,14.59A4.09,4.09 0 0,1 3.08,10.5A4.09,4.09 0 0,1 7.17,6.41C8.21,6.41 9.16,6.78 9.91,7.5L10,7.54L8.75,8.72L8.69,8.67C8.4,8.4 7.91,8.08 7.17,8.08C5.86,8.08 4.79,9.17 4.79,10.5C4.79,11.83 5.86,12.92 7.17,12.92C8.54,12.92 9.13,12.05 9.29,11.46H7.08V9.91H11.03L11.04,10C11.08,10.19 11.09,10.38 11.09,10.59C11.09,12.94 9.5,14.59 7.17,14.59M13.2,12.88C13.53,13.5 13.94,14.06 14.39,14.58L13.85,15.11L13.2,12.88M13.97,12.12H13L12.67,11.08H16.66C16.66,11.08 16.32,12.39 15.1,13.82C14.58,13.2 14.21,12.59 13.97,12.12M21,20A1,1 0 0,1 20,21H13L15,19L14.19,16.23L15.11,15.31L17.79,18L18.5,17.27L15.81,14.59C16.71,13.56 17.41,12.34 17.73,11.08H19V10.04H15.36V9H14.32V10.04H12.36L11.18,6H20A1,1 0 0,1 21,7V20Z' fill='%23161617'/%3E%3C/svg%3E") center / 12px no-repeat;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    background-size: 20px 20px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 0 6px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-radius: 4px
+}
+
+
+
+
+.sticky-donate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 60px;
+    bottom: 60px;
+    z-index: 99;
+  }
+  
+  .sticky-donate > button {
+    padding: 1.25rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #5fac50;
+  }
+  
+  .sticky-donate > button:hover{
+    background-color: #2e4764;
+  }
+  
+  .fa-circle-dollar-to-slot {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+
+  iframe {
+    display: none!important;
+  }
+
+  .goog-te-gadget > span {
+    display: none!important;
+  }
+
+  .goog-te-combo option[value="af"],
+  .goog-te-combo option[value="sq"],
+  .goog-te-combo option[value="am"],
+  .goog-te-combo option[value="ar"],
+  .goog-te-combo option[value="hy"],
+  .goog-te-combo option[value="as"],
+  .goog-te-combo option[value="ay"],
+  .goog-te-combo option[value="az"],
+  .goog-te-combo option[value="bm"],
+  .goog-te-combo option[value="eu"],
+  .goog-te-combo option[value="be"],
+  .goog-te-combo option[value="bn"],
+  .goog-te-combo option[value="bho"],
+  .goog-te-combo option[value="bs"],
+  .goog-te-combo option[value="bg"],
+  .goog-te-combo option[value="ca"],
+  .goog-te-combo option[value="ceb"],
+  .goog-te-combo option[value="ny"],
+  .goog-te-combo option[value="zh-CN"],
+  .goog-te-combo option[value="zh-TW"],
+  .goog-te-combo option[value="co"],
+  .goog-te-combo option[value="hr"],
+  .goog-te-combo option[value="cs"],
+  .goog-te-combo option[value="da"],
+  .goog-te-combo option[value="dv"],
+  .goog-te-combo option[value="doi"],
+  .goog-te-combo option[value="nl"],
+  .goog-te-combo option[value="eo"],
+  .goog-te-combo option[value="et"],
+  .goog-te-combo option[value="ee"],
+  .goog-te-combo option[value="tl"],
+  .goog-te-combo option[value="fi"],
+  .goog-te-combo option[value="fr"],
+  .goog-te-combo option[value="fy"],
+  .goog-te-combo option[value="gl"],
+  .goog-te-combo option[value="ka"],
+  .goog-te-combo option[value="de"],
+  .goog-te-combo option[value="el"],
+  .goog-te-combo option[value="gn"],
+  .goog-te-combo option[value="gu"],
+  .goog-te-combo option[value="ht"],
+  .goog-te-combo option[value="ha"],
+  .goog-te-combo option[value="haw"],
+  .goog-te-combo option[value="iw"],
+  .goog-te-combo option[value="hi"],
+  .goog-te-combo option[value="hmn"],
+  .goog-te-combo option[value="hu"],
+  .goog-te-combo option[value="is"],
+  .goog-te-combo option[value="ig"],
+  .goog-te-combo option[value="ilo"],
+  .goog-te-combo option[value="id"],
+  .goog-te-combo option[value="ga"],
+  .goog-te-combo option[value="it"],
+  .goog-te-combo option[value="ja"],
+  .goog-te-combo option[value="jw"],
+  .goog-te-combo option[value="kn"],
+  .goog-te-combo option[value="kk"],
+  .goog-te-combo option[value="km"],
+  .goog-te-combo option[value="rw"],
+  .goog-te-combo option[value="gom"],
+  .goog-te-combo option[value="ko"],
+  .goog-te-combo option[value="kri"],
+  .goog-te-combo option[value="ku"],
+  .goog-te-combo option[value="ckb"],
+  .goog-te-combo option[value="ky"],
+  .goog-te-combo option[value="lo"],
+  .goog-te-combo option[value="la"],
+  .goog-te-combo option[value="lv"],
+  .goog-te-combo option[value="ln"],
+  .goog-te-combo option[value="lt"],
+  .goog-te-combo option[value="lg"],
+  .goog-te-combo option[value="lb"],
+  .goog-te-combo option[value="mk"],
+  .goog-te-combo option[value="mai"],
+  .goog-te-combo option[value="mg"],
+  .goog-te-combo option[value="ms"],
+  .goog-te-combo option[value="ml"],
+  .goog-te-combo option[value="mt"],
+  .goog-te-combo option[value="mi"],
+  .goog-te-combo option[value="mr"],
+  .goog-te-combo option[value="mni-Mtei"],
+  .goog-te-combo option[value="lus"],
+  .goog-te-combo option[value="mn"],
+  .goog-te-combo option[value="my"],
+  .goog-te-combo option[value="ne"],
+  .goog-te-combo option[value="no"],
+  .goog-te-combo option[value="or"],
+  .goog-te-combo option[value="om"],
+  .goog-te-combo option[value="ps"],
+  .goog-te-combo option[value="fa"],
+  .goog-te-combo option[value="pl"],
+  .goog-te-combo option[value="pt"],
+  .goog-te-combo option[value="pa"],
+  .goog-te-combo option[value="qu"],
+  .goog-te-combo option[value="ro"],
+  .goog-te-combo option[value="ru"],
+  .goog-te-combo option[value="sm"],
+  .goog-te-combo option[value="sa"],
+  .goog-te-combo option[value="gd"],
+  .goog-te-combo option[value="nso"],
+  .goog-te-combo option[value="sr"],
+  .goog-te-combo option[value="st"],
+  .goog-te-combo option[value="sn"],
+  .goog-te-combo option[value="sd"],
+  .goog-te-combo option[value="si"],
+  .goog-te-combo option[value="sk"],
+  .goog-te-combo option[value="sl"],
+  .goog-te-combo option[value="so"],
+  .goog-te-combo option[value="es"],
+  .goog-te-combo option[value="su"],
+  .goog-te-combo option[value="sw"],
+  .goog-te-combo option[value="sv"],
+  .goog-te-combo option[value="tg"],
+  .goog-te-combo option[value="ta"],
+  .goog-te-combo option[value="tt"],
+  .goog-te-combo option[value="te"],
+  .goog-te-combo option[value="th"],
+  .goog-te-combo option[value="ti"],
+  .goog-te-combo option[value="ts"],
+  .goog-te-combo option[value="tr"],
+  .goog-te-combo option[value="tk"],
+  .goog-te-combo option[value="ak"],
+  .goog-te-combo option[value="uk"],
+  .goog-te-combo option[value="ug"],
+  .goog-te-combo option[value="uz"],
+  .goog-te-combo option[value="vi"],
+  .goog-te-combo option[value="cy"],
+  .goog-te-combo option[value="xh"],
+  .goog-te-combo option[value="yi"],
+  .goog-te-combo option[value="yo"],
+  .goog-te-combo option[value="zu"] {
+    display: none;
+  }
+  
+
+#goog-gt-tt {
+    display: none!important;
+  }
+
+.translation {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .translation > span {
+    font-size: 0.75rem;
+  }
+
+  select {
+    border: 1px solid #0098da;
+  }
+  
   
 
 /* ////////////////Media Queries//////////////////// */

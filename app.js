@@ -70,6 +70,7 @@ navLinks.forEach((navLinks) => {
   });
 });
 
+
 ////////////// Pay Now
 
   function generateUPI() {
@@ -77,7 +78,10 @@ navLinks.forEach((navLinks) => {
     let amount = document.getElementById("amount").value;
     
     // Generate a unique transaction ID
-    let transactionId = Date.now() + Math.random().toString(36).substring(2, 15);
+    let transactionId = Date.now()
+       + Math.random()
+       .toString(36)
+       .substring(2, 15);
     
     // Generate the UPI payment link
     let upiLink = "upi://pay?pa=wifaqstore@axisbank&pn=Ehsan%20Ahmed%20Siddiqui&am=" + amount + "&cu=INR&mode=04&purpose=00&src=00&tid=" + transactionId;
@@ -141,3 +145,26 @@ submitBtn.addEventListener("click", (e) => {
 });
 
 getUserData();
+
+
+
+/////Translator
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}
+
+
+// Urdu Font Changer
+function changeLanguage(languageCode) {
+  var bodyElement = document.body;
+  
+  if (languageCode === 'ur') {
+    bodyElement.classList.add('urdu-font');
+  } else {
+    bodyElement.classList.add('eng-font');
+  }
+  console.log(bodyElement)
+}
