@@ -70,6 +70,30 @@
     </div>
   </div>
 
+  <div>
+    <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" style="display: flex; justify-content: center;" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introduction</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Wifaq System</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Wifaq Activity</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Deeniyaat & School Syllabus</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Gallery</button>
+        </li>
+      </ul>
+      <hr style="width:75%; margin: auto;">
+    </div>
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
   <!------------------- Introduction Section ---------------------->
   <section class="introduction shape">
     <div class="intro-container">
@@ -97,7 +121,10 @@
     </div>
   </section>
 
-  <!-- Wifaq System -->
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+              <!-- Wifaq System -->
 
   <section class="text-gray-600 body-font">
     <div class="container mx-auto flex px-5 py-8 md:flex-row-reverse flex-col items-center">
@@ -123,32 +150,12 @@
     </div>
   </section>
 
-
-  <!-- <section class="wifaq-system">
-    <div class="system-right">
-      <h3>The System of the Makatib</h3>
-      <p>Alhamdulillah, careful planning and organization are a priority in the establishment of makatib, as unorganized
-        makatib result in inefficient use of teachers and students time.Therefore, a formal syllabus has been designed
-        in addition to a structured teachers' training program.
-        The responsible figures of the makatib are assigned their duties through monthly and quarterly consultations.
-        Additionally, monthly, half-yearly, and annual examinations of each maktab have been designed as a means of
-        regulating and improvingthe standard of education. Five highly-qualified scholars are appointed to supervise the
-        makatib.
-        If you wish to set up an organized maktab in your area, please send your details using the following link. For
-        more details, you may contact these numbers.
-      </p>
-      <div class="tel-container">
-        <button class="tel"><a href="tel:7801068891">7801068891</a></button>
-        <button class="tel"><a href="tel:9059456134">9059456134</a></button>
-      </div>
-    </div>
-    <div class="system-left">
-      <img src="./images/wifaq-system.jpeg" alt="">
-    </div>
-  </section> -->
+        </div>
 
 
-  <!-- Activities of Wifaq Desktop-->
+<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<!-- Activities of Wifaq Desktop-->
   <section class="text-gray-600 body-font">
     <div class="activity-headline">
       <h3>Activity of Wifaq</h3>
@@ -270,50 +277,9 @@
     </div>
   </section>
 
+</div>
 
-  <!-- Activities of Wifaq Mobile -->
-  <!-- <section class="activity-mobile">
-    <div class="activity-headline">
-      <h3>Activity of Wifaq</h3>
-    </div>
-
-    <div class="activity-container">
-      <div class="left-activity">
-        <div class="awarness">
-          <img src="./icons/awarness.svg" alt="awarness"><br>
-          <p>Create awareness in public for establishment of religious schools.</p>
-        </div>
-        <div class="guidance">
-          <img src="./icons/right guidance.svg" alt="guidance"><br>
-          <p>Provide right guidance to people concerned about establishment of Makatib.</p>
-        </div>
-        <div class="efforts">
-          <img src="./icons/efforts.svg" alt="efforts"><br>
-          <p>Make efforts for the establishment of new organised Maktabs each month.</p>
-        </div>
-      </div>
-
-      <div class="img-activity">
-        <img src="./images/Wifaq.png" alt="Wifaq Logo">
-      </div>
-
-      <div class="right-activity">
-        <div class="devlop">
-          <img src="./icons/devlop.svg" alt="devlop"><br>
-          <p>Take steps to develop educational standards in existing and established schools.</p>
-        </div>
-        <div class="essential">
-          <img src="./icons/essential.svg" alt="essential"><br>
-          <p>Provide essential goods which required in well-organised Schools and Makatibs.</p>
-        </div>
-        <div class="workshop">
-          <img src="./icons/workshop.svg" alt="workshop"><br>
-          <p>Conduct male and female workshop (training classes) for teachers teaching in schools..</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
+<div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">
   <!------------------- Deeniyaat ------------------->
 
   <section class="deeniyaat">
@@ -379,7 +345,10 @@
 
   </section>
 
-  <!-- Wifaq Products -->
+        </div>
+
+<div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">
+            <!-- Wifaq Products -->
 
   <section class="gallery-container">
     <h3 class="event-headline gallery1">Gallery</h3>
@@ -444,6 +413,8 @@
 
     </div>
   </section>
+        </div>
+</div>
   
   
   <!-- Wifaq Form -->
@@ -464,10 +435,6 @@
       </div>
     </form>
   </section>
-
-
-
-
 
   <!-- Masjid -->
   
@@ -555,7 +522,7 @@
   </script>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 
 </body>

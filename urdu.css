@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+body{
+  padding: 25px;
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+.title {
+	color: #5C6AC4;
+}
+
