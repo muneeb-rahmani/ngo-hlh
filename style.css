@@ -108,6 +108,24 @@ body {
   color: #fff;
 }
 
+
+
+  /* Sticky translator */
+
+  .select-container {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  
+
+
 /* -----------------Navbar----------------- */
 
 
@@ -290,7 +308,7 @@ nav ul.active {
 
 
 /* --------------------------Slider start here-------------------------- */
-/* 
+
 .load {
   animation: slide 2s;
 }
@@ -301,20 +319,18 @@ nav ul.active {
   background-position: center;
   width: 100%;
   height: 100vh;
-  
 }
 
-.content {
+.content-hlh {
   color: #fff;
   width: 100%;
   height: 100vh;
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 75vh;
-  animation: slide 20s infinite;
+  animation: slide-hlh 20s infinite;
 }
 
 .principal {
@@ -336,51 +352,59 @@ nav ul.active {
 }
 
 @media (max-width: 640px) {
-  .content {
+  .content-hlh {
       height: 50vh;
   }
 }
 
-@keyframes slide {
+@keyframes slide-hlh {
+
   0% {
-      background-image: url('./images/gallery/charity-1.webp');
+      background-image: url('./images/gallery/Rain-affected-1.webp');
   }
 
   20.01% {
-      background-image: url('./images/gallery/charity-2.webp');
+      background-image: url('./images/gallery/Rain-affected-2.webp');
   }
 
   20% {
-      background-image: url('./images/gallery/charity-2.webp');
+      background-image: url('./images/gallery/Rain-affected-2.webp');
   }
 
   40.01% {
-      background-image: url('./images/gallery/charity-3.webp');
+      background-image: url('./images/gallery/Rain-affected-3.webp');
   }
 
   40% {
-      background-image: url('./images/gallery/charity-3.webp');
+      background-image: url('./images/gallery/Rain-affected-3.webp');
   }
 
   60.01% {
-      background-image: url('./images/gallery/charity-4.webp');
+      background-image: url('./images/gallery/Rain-affected-4.webp');
   }
 
   60% {
-      background-image: url('./images/gallery/charity-4.webp');
+      background-image: url('./images/gallery/Rain-affected-5.webp');
   }
 
   80.01% {
-      background-image: url('./images/gallery/charity-5.webp');
+      background-image: url('./images/gallery/Rain-affected-5.webp');
   }
 
   80% {
-      background-image: url('./images/gallery/charity-5.webp');
+      background-image: url('./images/gallery/Rain-affected-5.webp');
+  }
+ 
+  90.01% {
+      background-image: url('./images/gallery/MACC\ 01.webp');
   }
 
+  100% {
+      background-image: url('./images/gallery/MACC\ 01.webp');
+  }
 
 }
- */
+
 
 
 
@@ -1416,7 +1440,384 @@ section .gallery-box .gallery .itemBox.hide {
 }
 
 /*----------------------- Wifaq Page ----------------------- */
-.title-container {
+
+.load {
+  animation: slide 2s;
+}
+
+.title-headline {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: normal;
+}
+
+
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-wifaq {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  animation: slide 10s infinite;
+}
+
+.content-diploma {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  animation: slide 15s infinite;
+}
+
+.content-macc {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  animation: slide 15s infinite;
+}
+
+.content-mahad {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  animation: slide 15s infinite;
+}
+
+.content-helpway {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  animation: slide 15s infinite;
+}
+
+.principal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.principal h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.principal p {
+  font-size: 20px;
+}
+
+@media (max-width: 640px) {
+  .content-wifaq {
+      height: 50vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-diploma {
+      height: 50vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-macc {
+      height: 50vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-mahad {
+      height: 50vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-helpway {
+      height: 50vh;
+  }
+}
+
+/* wifaq slide */
+@keyframes slide {
+  0% {
+      background-image: url('./images/gallery/wifaq-01.webp');
+  }
+
+  20.01% {
+      background-image: url('./images/gallery/wifaq-01.webp');
+  }
+
+  20% {
+      background-image: url('./images/gallery/wifaq-02.webp');
+  }
+
+  40.01% {
+      background-image: url('./images/gallery/wifaq-02.webp');
+  }
+
+  40% {
+      background-image: url('./images/gallery/wifaq-03.webp');
+  }
+
+  60.01% {
+      background-image: url('./images/gallery/wifaq-03.webp');
+  }
+
+  60% {
+      background-image: url('./images/gallery/wifaq-04.webp');
+  }
+
+  80.01% {
+      background-image: url('./images/gallery/wifaq-04.webp');
+  }
+
+  80% {
+      background-image: url('./images/gallery/charity-04.webp');
+  }
+
+  90.01% {
+      background-image: url('./images/gallery/Rain-affected-1.webp');
+  }
+  
+  99% {
+      background-image: url('./images/gallery/Rain-affected-1.webp');
+  }
+
+
+}
+
+
+/* diploma slide */
+@keyframes slide {
+  0% {
+      background-image: url('./images/slides/diploma-1.jpg');
+  }
+
+  20.01% {
+      background-image: url('./images/slides/diploma-1.jpg');
+  }
+
+  20% {
+      background-image: url('./images/slides/diploma-2.jpg');
+  }
+
+  40.01% {
+      background-image: url('./images/slides/diploma-2.jpg');
+  }
+
+  40% {
+      background-image: url('./images/slides/diploma-3.jpg');
+  }
+
+  60.01% {
+      background-image: url('./images/slides/diploma-3.jpg');
+  }
+
+  60% {
+      background-image: url('./images/slides/diploma-4.jpg');
+  }
+
+  80.01% {
+      background-image: url('./images/slides/diploma-4.jpg');
+  }
+
+  80% {
+      background-image: url('./images/slides/diploma-5.jpg');
+  }
+
+  90.01% {
+      background-image: url('./images/slides/diploma-5.jpg');
+  }
+  
+  99% {
+      background-image: url('./images/slides/diploma-5.jpg');
+  }
+
+
+}
+
+
+/* macc slide */
+@keyframes slide {
+  0% {
+      background-image: url('./images/gallery/charity-1.webp');
+  }
+
+  20.01% {
+      background-image: url('./images/gallery/charity-1.webp');
+  }
+
+  20% {
+      background-image: url('./images/gallery/charity-2.webp');
+  }
+
+  40.01% {
+      background-image: url('./images/gallery/charity-2.webp');
+  }
+
+  40% {
+      background-image: url('./images/gallery/charity-3.webp');
+  }
+
+  60.01% {
+      background-image: url('./images/gallery/charity-3.webp');
+  }
+
+  60% {
+      background-image: url('./images/gallery/MACC\ 01.webp');
+  }
+
+  80.01% {
+      background-image: url('./images/gallery/MACC\ 01.webp');
+  }
+
+  80% {
+      background-image: url('./images/gallery/MACC\ 02.webp');
+  }
+
+  90.01% {
+      background-image: url('./images/gallery/MACC\ 02.webp');
+  }
+  
+  99% {
+      background-image: url('./images/gallery/MACC\ 03.webp');
+  }
+
+
+}
+
+
+
+/* mahad slide */
+@keyframes slide {
+  0% {
+      background-image: url('./images/slides/mahad-1.jpg');
+  }
+
+  20.01% {
+      background-image: url('./images/slides/mahad-1.jpg');
+  }
+
+  20% {
+      background-image: url('./images/slides/mahad-2.jpg');
+  }
+
+  40.01% {
+      background-image: url('./images/slides/mahad-2.jpg');
+  }
+
+  40% {
+      background-image: url('./images/slides/mahad-3.jpg');
+  }
+
+  60.01% {
+      background-image: url('./images/slides/mahad-3.jpg');
+  }
+
+  60% {
+      background-image: url('./images/slides/mahad-4.jpg');
+  }
+
+  80.01% {
+      background-image: url('./images/slides/mahad-4.jpg');
+  }
+
+  80% {
+      background-image: url('./images/slides/mahad-5.jpg');
+  }
+
+  90.01% {
+      background-image: url('./images/slides/mahad-5.jpg');
+  }
+  
+  99% {
+      background-image: url('./images/slides/mahad-5.jpg');
+  }
+
+}
+
+
+/* helpway slide */
+@keyframes slide {
+  0% {
+      background-image: url('./images/slides/helpway-1');
+  }
+
+  20.01% {
+      background-image: url('./images/slides/helpway-1');
+  }
+
+  20% {
+      background-image: url('./images/slides/helpway-2');
+  }
+
+  40.01% {
+      background-image: url('./images/slides/helpway-2');
+  }
+
+  40% {
+      background-image: url('./images/slides/helpway-3');
+  }
+
+  60.01% {
+      background-image: url('./images/slides/helpway-3');
+  }
+
+  60% {
+      background-image: url('./images/slides/helpway-4');
+  }
+
+  80.01% {
+      background-image: url('./images/slides/helpway-4');
+  }
+
+  80% {
+      background-image: url('./images/slides/helpway-5');
+  }
+
+  90.01% {
+      background-image: url('./images/slides/helpway-5');
+  }
+  
+  99% {
+      background-image: url('./images/slides/helpway-5');
+  }
+
+}
+
+/* .title-container {
   background-image: linear-gradient(
       rgba(46, 71, 100, 0.75),
       rgb(46, 71, 100, 0.75)
@@ -1456,7 +1857,7 @@ section .gallery-box .gallery .itemBox.hide {
 
 .breadcrumb li a:hover {
   color: #f7f1e9 !important;
-}
+} */
 
 /*///////////////////// Wifaq System ///////////////////// */
 

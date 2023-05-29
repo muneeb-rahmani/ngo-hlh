@@ -149,22 +149,12 @@ getUserData();
 
 
 /////Translator
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-
-
-// Urdu Font Changer
-function changeLanguage(languageCode) {
-  var bodyElement = document.body;
-  
-  if (languageCode === 'ur') {
-    bodyElement.classList.add('urdu-font');
-  } else {
-    bodyElement.classList.add('eng-font');
-  }
-  console.log(bodyElement)
-}
+document.addEventListener("DOMContentLoaded", function() {
+  var selectElement = document.getElementById("mySelect");
+  selectElement.addEventListener("change", function() {
+    var selectedOption = selectElement.value;
+    if (selectedOption !== "") {
+      window.location.href = selectedOption;
+    }
+  });
+});
