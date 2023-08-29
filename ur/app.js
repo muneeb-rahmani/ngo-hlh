@@ -154,7 +154,9 @@ document.addEventListener("DOMContentLoaded", function() {
   selectElement.addEventListener("change", function() {
     var selectedOption = selectElement.value;
     if (selectedOption !== "") {
-      window.location.href = selectedOption;
+      var currentUrl = window.location.href.replace(/\/[^/]*$/, "/");
+      window.location.href = currentUrl + selectedOption;
     }
   });
 });
+
