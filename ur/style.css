@@ -1622,6 +1622,16 @@ li {
 
 /* ///////////////////////Activity of Wifaq Desktop/////////////////////// */
 
+.listItem {
+  font-size: 1.5rem; 
+  direction: rtl;
+}
+
+.revDir {
+  direction: rtl;
+  gap: 15px;
+}
+
 .wifaq-activity {
   width: 100%;
   margin: 3rem 0 8rem;
